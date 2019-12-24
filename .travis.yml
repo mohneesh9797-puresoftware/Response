@@ -7,6 +7,12 @@ matrix:
     - python: 3.7
       dist: xenial
       sudo: true
+    - arch: arm64
+      python: 3.6
+    - arch: arm64
+      python: 3.7
+      dist: xenial
+      sudo: true
 install:
   - pip install 'pytest>=3.6' pytest-cov codecov pydocstyle pycodestyle
   - python setup.py install
