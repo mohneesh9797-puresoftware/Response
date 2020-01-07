@@ -1,16 +1,16 @@
-
-arch:
-    - arm64
-    - amd64
 language: python
 sudo: false
 cache: pip
 matrix:
   include:
     - python: 3.6
+    - arch: arm64
+      python: 3.6
     - python: 3.7
       dist: xenial
-      sudo: true
+    - python: 3.7
+      arch: arm64
+      dist: xenail
 install:
   - pip install 'pytest>=3.6' pytest-cov codecov pydocstyle pycodestyle numpy 
   - python setup.py install
