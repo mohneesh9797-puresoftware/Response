@@ -13,6 +13,7 @@ matrix:
       dist: xenail
 install:
   - pip install 'pytest>=3.6' pytest-cov codecov pydocstyle pycodestyle numpy==1.16
+  - python setupy build 
   - python setup.py install
 # command to run tests
 script:
