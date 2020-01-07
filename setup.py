@@ -21,7 +21,7 @@ REQUIRES_PYTHON = ">=3.6.0"
 VERSION = "0.4.0"
 
 # What packages are required for this module to be executed?
-REQUIRED = ["numpy", "scipy", "matplotlib>=2.2.0"]
+REQUIRED = ["numpy", "scipy==1.3.1", "matplotlib>=2.2.0"]
 
 here = os.path.abspath(os.path.dirname(__file__))
 
